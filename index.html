@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="form-container">
+    <h1>User Registration</h1>
+    <form id="registrationForm">
+        <div class="form-field">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" pattern="[A-Za-z]+" required>
+            <span class="error-message" id="firstNameError"></span>
+          </div>
+    
+          <div class="form-field">
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" pattern="[A-Za-z]+" required>
+            <span class="error-message" id="lastNameError"></span>
+          </div>
+
+      <div class="form-field">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" required>
+        <span class="error-message" id="dobError"></span>
+      </div>
+
+      <div class="form-field">
+        <label>Gender:</label>
+        <input type="radio" name="gender" id="male" required>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" required>
+        <label for="female">Female</label>
+        <span class="error-message" id="genderError"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
+        <span class="error-message" id="passwordError"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" required>
+        <span class="error-message" id="confirmPasswordError"></span>
+      </div>
+
+      <button type="button" class="submit-button" onclick="register()">Register</button>
+    </form>
+  </div>
+
+  <script src = "script.js"> 
+  </script>
+</body>
+</html>
